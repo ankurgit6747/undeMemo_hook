@@ -26,3 +26,10 @@ export default function App() {
     </div>
   );
 }
+
+// use memo hook cache the return value of expensive calculation and
+// preventing the rerender on every time the stare is change
+// it is similar like a useEffect hook, it also has a depedencies array
+// which help us to call this expensive calculation only when the
+// the variable is change
+// this function is not run on every rerender of page
